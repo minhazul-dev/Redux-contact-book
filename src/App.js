@@ -9,6 +9,7 @@ import {
   Link
 } from "react-router-dom";
 import Home from './components/Home/Home';
+import Add from './components/Add/Add';
 function App() {
   return (
 
@@ -22,7 +23,7 @@ function App() {
           <Home/>
           </Route>
           <Route path="/add">
-            <h1>This is add</h1>
+           <Add/>
           </Route>
           <Route path="/edit/:id">
             <h1>this is edit</h1>

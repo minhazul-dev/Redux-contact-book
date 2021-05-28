@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
     return (
         <div className="container">
-             <h3 className="mt-5">Welcome to our contact book</h3>
+             <h3 className="mt-5 text-center">Welcome to our contact book</h3>
             <div className="row">
            
                 <div className="col-md-12  my-5">
