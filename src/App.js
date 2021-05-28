@@ -1,24 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
 
+import { ToastContainer } from 'react-toastify';
+import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from './components/Home/Home';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+<Router>
+      <div>
+        <Navbar/>
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route exact path="/">
+          <Home/>
+          </Route>
+          <Route path="/add">
+            <h1>This is add</h1>
+          </Route>
+          <Route path="/edit/:id">
+            <h1>this is edit</h1>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+
+
+    // <div>
+    //   <ToastContainer/>
+    // <Navbar/>
+    // </div>
   );
 }
 
