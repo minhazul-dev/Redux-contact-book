@@ -6,20 +6,23 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'react-toastify/dist/ReactToastify.css';
 import { createStore } from 'redux';
-import contactReducer from './redux/reducers/contactReducer'
-// import { composeWithDevTools } from 'redux-devtools-extension';
-import { Router } from 'react-router';
+import contactReducer from './redux/reducers/contactReducer';
+import { composeWithDevTools } from 'redux-devtools-extension';
 import { Provider } from 'react-redux';
 
-const store = createStore(contactReducer)
+
+
+
+const store = createStore(contactReducer, composeWithDevTools())
 
 ReactDOM.render(
+
   <Provider store={store}>
-    <Router> 
-      <App />
-      </Router>
-  </Provider>,
-  
+    <App />
+  </Provider>
+  ,
+
+
   document.getElementById('root')
 );
 

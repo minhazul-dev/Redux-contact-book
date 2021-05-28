@@ -10,11 +10,13 @@ import {
 } from "react-router-dom";
 import Home from './components/Home/Home';
 import Add from './components/Add/Add';
+import Edit from './components/Edit/Edit';
 function App() {
   return (
 
 <Router>
       <div>
+        <ToastContainer/>
         <Navbar/>
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -26,7 +28,7 @@ function App() {
            <Add/>
           </Route>
           <Route path="/edit/:id">
-            <h1>this is edit</h1>
+            <Edit/>
           </Route>
         </Switch>
       </div>
