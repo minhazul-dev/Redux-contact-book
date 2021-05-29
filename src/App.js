@@ -33,12 +33,6 @@ function App() {
         </Switch>
       </div>
     </Router>
-
-
-    // <div>
-    //   <ToastContainer/>
-    // <Navbar/>
-    // </div>
   );
 }
 

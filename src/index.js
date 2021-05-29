@@ -6,9 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'react-toastify/dist/ReactToastify.css';
 import { createStore } from 'redux';
-import contactReducer from './redux/reducers/contactReducer';
+// import contactReducer from './redux/reducers/contactReducer';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { Provider } from 'react-redux';
+import { contactReducer } from './redux/reducers/contactReducer';
 
 
 
