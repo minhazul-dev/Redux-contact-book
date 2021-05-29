@@ -9,6 +9,7 @@ import {
   Link
 } from "react-router-dom";
 import Home from './components/Home/Home';
+import Edit from './components/Edit/Edit';
 function App() {
   return (
 
@@ -25,7 +26,7 @@ function App() {
             <h1>This is add</h1>
           </Route>
           <Route path="/edit/:id">
-            <h1>this is edit</h1>
+           <Edit></Edit>
           </Route>
         </Switch>
       </div>
